@@ -10,7 +10,7 @@ import numpy as np
 import numpy.random as npr
 
 
-def questao_6(a,b):
+def questao_6():
      
     a = np.array([1,2,3])
     b = np.array([5,6,7])
