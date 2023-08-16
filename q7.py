@@ -19,7 +19,5 @@ def questao_7():
     inv = np.linalg.inv(a8)
     resultado = np.matmul(a8, inv)
     resultado = np.round(resultado, 0)
-    print(resultado) #que é o determinante!
-    
-questao_7()
+    return(resultado) #que é o determinante!
     
