@@ -15,12 +15,13 @@ print("Questão 2:")
 questoes_lp.q2()
 
 print("Questão 3:")
+questoes_lp.q3()
 
 print("Questão 4:")
-questoes_lp.q4()
+arrays = questoes_lp.q4()
 
 print("Questão 5:")
-questoes_lp.q5()
+questoes_lp.q5(arrays)
 
 print("Questão 6:")
 q6.questao_6()
