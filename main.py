@@ -7,6 +7,13 @@ Created on Wed Aug 16 07:59:55 2023
 
 import q6, q7, questoes_lp
 
+
+print("Questão 1:")
+questoes_lp.q1()
+
+print("Questão 2:")
+questoes_lp.q2()
+
 print("Questão 3:")
 
 print("Questão 4:")
