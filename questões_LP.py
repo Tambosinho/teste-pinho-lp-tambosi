@@ -1,6 +1,31 @@
 import numpy.random as npr
 import numpy as np
 
+global array5 
+global array6
+
+def imprimi(array):
+    print(array)
+
+def q1():
+    array1 = np.array([1, 2, 3, 4, 5, 6, 1, 2 , 3])
+    array2 = np.array([7, 8, 9, 10, 11, 12, 1, 2, 3])
+    array3 = array1 + array2
+    return array3
+
+
+def q2():
+    array3_2D = q1().reshape(3, 3)
+    array3_float = array3_2D.astype(float)
+    transposta = array3_float.transpose()
+    return transposta
+
+
+def q3(transposta):
+    array4 = np.array([[2, 4, 1], [6, 8, 1], [4,5,1]])
+    array4 = array4 * transposta
+    return array4
+
 def q4():
     array5 = npr.randint(0, 20, 10)
     array6 = npr.randint(0, 20, 10)
@@ -12,8 +37,6 @@ def q4():
 
     array5_n_array6 = np.setdiff1d(array5, array6)
 
-    print("Array 1:", array5)
-    print("Array 2:", array6)
     print("Elementos em comum:", elementos_em_comum)
     print("Índices dos elementos em comum no Array 5:", indices_array5)
     print("Índices dos elementos em comum no Array 6:", indices_array6)
@@ -21,8 +44,8 @@ def q4():
 
     return (array5,array6)
 
-def q5():
-    empilhamento5_6 = np.hstack(q4())
+def q5(array5,array6):
+    empilhamento5_6 = np.hstack(array5,array6)
     print(empilhamento5_6)
     print("Média Empilhamento:", np.mean(empilhamento5_6))
     print("Desvio Padrão Empilhamento:", np.std(empilhamento5_6))
