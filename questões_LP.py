@@ -1,6 +1,10 @@
 import numpy.random as npr
 import numpy as np
 
+<<<<<<< HEAD:questoes_LP.py
+
+=======
+>>>>>>> 7eedce28ac0ffc02b0e7e9aae39da52698cb0b20:questões_LP.py
 def q1():
     array1 = np.array([1, 2, 3, 4, 5, 6, 1, 2 , 3])
     array2 = np.array([7, 8, 9, 10, 11, 12, 1, 2, 3])
